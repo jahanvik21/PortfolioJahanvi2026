@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jahanvi Katariya | Creative Designer</title>
+  <meta
+    name="description"
+    content="Creative designer portfolio showcasing branding, motion design, and 3D visuals."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader"></div>
+    <span>Jahanvi</span>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="progress"></div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <nav class="nav">
+      <div class="brand">Jahanvi</div>
+
+      <button id="menuBtn">☰</button>
+
+      <div id="menu">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+        <a href="./Assets/Resume.pdf" class="cta" target="_blank">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">CREATIVE DESIGNER</p>
+
+      <h1>
+        Design that feels premium, clean,
+        and unforgettable.
+      </h1>
+
+      <p>
+        I create branding, motion, and 3D visuals
+        that help brands stand out with elegance and impact.
+      </p>
+
+      <div class="actions">
+        <a href="#work" class="cta">View Work</a>
+        <a href="#contact" class="ghost">Let's Talk</a>
+      </div>
+    </div>
+
+    <div class="hero-media reveal">
+      <img
+        src="./Assets/Profilephoto.png"
+        alt="Jahanvi Katariya"
+      />
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="section">
+    <h2 class="reveal">Selected Work</h2>
+
+    <div class="filters reveal">
+      <button class="filter active" data-type="all">All</button>
+      <button class="filter" data-type="design">Design</button>
+      <button class="filter" data-type="motion">Motion</button>
+      <button class="filter" data-type="3d">3D</button>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="view-more-wrap" id="viewMoreWrap">
+      <button id="viewMoreBtn" class="ghost view-more-btn">
+        View More Work
+      </button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section two">
+    <div class="reveal">
+      <h2>About Me</h2>
+
+      <p>
+        I blend graphic design, motion storytelling,
+        and 3D creativity into sleek visual experiences
+        that help brands connect, impress, and stay memorable.
+      </p>
+    </div>
+
+    <div class="cards reveal">
+      <div class="card">
+        <h3>Tools</h3>
+        <p>
+          Photoshop<br />
+          Illustrator<br />
+          Premiere Pro<br />
+          3ds Max
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Focus</h3>
+        <p>
+          Brand Identity<br />
+          Motion Design<br />
+          Social Campaigns<br />
+          3D Visualization
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section">
+    <h2 class="reveal">Creative Process</h2>
+
+    <div class="steps">
+      <div class="card reveal">
+        <h3>Discover</h3>
+        <p>Understanding the brand, audience, and purpose.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Concept</h3>
+        <p>Crafting visual directions and creative ideas.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Design</h3>
+        <p>Building polished visual experiences with detail.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Refine</h3>
+        <p>Iterating until the final execution feels premium.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="card reveal">
+      <h2>Let’s Build Something Beautiful</h2>
+
+      <p>
+        Ready to collaborate on branding, motion,
+        or visual storytelling?
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:katariyajahanvi2@gmail.com">
+          katariyajahanvi2@gmail.com
+        </a>
+
+        <a href="tel:+918446183422">
+          +91 84461 83422
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox">
+    <button id="close">×</button>
+    <button id="prev">‹</button>
+    <div id="lightboxContent"></div>
+    <button id="next">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
